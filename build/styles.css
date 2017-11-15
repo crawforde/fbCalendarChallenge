@@ -1,0 +1,59 @@
+#main{
+  display: flex;
+}
+#side-bar{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 0 10px 0 0;
+}
+.time-label{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 59px;
+}
+
+.big-time{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+}
+
+.big-time, .small-time{
+    width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.big-time h3{
+  margin: 0;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.big-time p {
+  margin: 0;
+  font-size: 10px;
+  text-align: right;
+}
+
+.small-time p{
+  text-align: right;
+  margin: 0;
+  font-size: 12px;
+}
+
+#calendar{
+  background-color: #eee;
+  width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 720px;
+  margin: 21px 0 20px 0;
+}

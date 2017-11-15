@@ -7,7 +7,7 @@
     "webpack": "webpack",
     "start": "webpack-dev-server --content-base build/"
   },
-  "author": "",
+  "author": "Ellie Crawford",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.24.1",

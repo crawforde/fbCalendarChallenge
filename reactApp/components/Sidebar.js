@@ -1,17 +1,18 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Calendar from './Calendar';
 
-const displayMessage =
-  'The React Redux Boilerplate is running successfully!';
+const times = [['9','AM'],['10','AM'],['11','AM'],['12','PM'],['1','PM'],['2','PM'],['3','PM'],['4','PM'],['5','PM'],['6','PM'], ['7','PM'], ['8','PM'], ['9','PM']];
 
 // class component
-class App extends React.Component {
+class Sidebar extends React.Component {
   render() {
     return (
-      <div id="main">
-        <Sidebar/>
-        <Calendar/>
+      <div id={'side-bar'}>
+        {times.map((item)=>(
+          <div key={item[0]+item[1]} className={'time-label'}>
+            <div className={'big-time'}><h3>{item[0]}:00</h3><p>{item[1]}</p></div>
+            {(item[0]!=="9" || item[1]!=="PM") ? <div className={'small-time'}><p>{item[0]}:30</p></div> : ''}
+          </div>
+        ))}
       </div>
     );
   }
@@ -45,4 +46,4 @@ class App extends React.Component {
 //
 // App = connect(mapStateToProps, mapDispatchToProps)(App);
 
-export default App;
+export default Sidebar;
