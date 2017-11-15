@@ -2,9 +2,6 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import Calendar from './Calendar';
 
-const displayMessage =
-  'The React Redux Boilerplate is running successfully!';
-
 // class component
 class App extends React.Component {
   render() {
